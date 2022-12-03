@@ -38,4 +38,4 @@ This application gives the user an opportunity to select 1 out of 4 possible opt
 ## Links
 
 - Repository: https://github.com/mandipn/Web-APIs-Code-Quiz
-- Deployed Application: 
+- Deployed Application: https://mandipn.github.io/Web-APIs-Code-Quiz/
