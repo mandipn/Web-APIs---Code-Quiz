@@ -1,18 +1,19 @@
 body {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
-    background-image: url('../images/clouds.jpeg');
+text-align: center;
+font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+color: white;
+background-image: url('../images/clouds.jpeg');
 }
 
 button {
-    padding: 5px;
-    margin: 10px;
-    border-radius: 30px;
-    background-color: rgb(236, 190, 190);
+padding: 5px;
+margin: 10px;
+border-radius: 30px;
+background-color: rgb(236, 190, 190);
 }
 
 .quiz-container button {
-    justify-content: center;
-    display: flex block;
-    margin: 10px;
+justify-content: center;
+display: flex block;
+margin: 10px;
 }

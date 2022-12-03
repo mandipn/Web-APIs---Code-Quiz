@@ -37,7 +37,53 @@ var questions = [{
     c: "3. Mike Tyson",
     d: "4. Mandip Nijor",
     correct: "2. George Foreman",
+},
+
+{
+    q: "What does JSON stand for?",
+    a: "1. Java Steps On Now",
+    b: "2. Just Scripts On New",
+    c: "3. Java Script Object Notation",
+    d: "4. Java Script On Node",
+    correct: "3. Java Script Object Notation",
+},
+
+{
+    q: "Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
+    a: "1. Rocky Balboa",
+    b: "2. George Foreman",
+    c: "3. Mike Tyson",
+    d: "4. Mandip Nijor",
+    correct: "2. George Foreman",
+},
+
+{
+    q: "Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
+    a: "1. Rocky Balboa",
+    b: "2. George Foreman",
+    c: "3. Mike Tyson",
+    d: "4. Mandip Nijor",
+    correct: "2. George Foreman",
+},
+
+{
+    q: "Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
+    a: "1. Rocky Balboa",
+    b: "2. George Foreman",
+    c: "3. Mike Tyson",
+    d: "4. Mandip Nijor",
+    correct: "2. George Foreman",
+},
+
+{
+    q: "Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
+    a: "1. Rocky Balboa",
+    b: "2. George Foreman",
+    c: "3. Mike Tyson",
+    d: "4. Mandip Nijor",
+    correct: "2. George Foreman",
 }
+
 ];
 
 var clickStart = document.getElementById("start");
