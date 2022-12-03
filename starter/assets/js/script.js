@@ -6,6 +6,16 @@ var questions = [{
     d: "4. Italy",
     correct: "2. Vatican",
 },
+
+{
+    q: "The 'function' and 'var' are known as:?",
+    a: "1. Keywords",
+    b: "2. Data types",
+    c: "3. Declaration statements",
+    d: "4. Prototypes",
+    correct: "3. Declaration statements",
+},
+
 {
     q: "Which of the following is a landlocked country, meaning it is not bordered by the sea or ocean?",
     a: "1. Kazakhstan",
@@ -14,6 +24,16 @@ var questions = [{
     d: "4. United Kingdom",
     correct: "1. Kazakhstan",
 },
+
+{
+    q: "The correct sequence of HTML tags for starting a webpage is -",
+    a: "1. Head, Title, HTML, body",
+    b: "2. HTML, Body, Title, Head",
+    c: "3. HTML, Title, Body, Head",
+    d: "4. HTML, Head, Title, Body",
+    correct: "4. HTML, Head, Title, Body",
+},
+
 {
     q: "In the UK, the abbreviation NHS stands for National what Service",
     a: "1. Humanity",
@@ -21,22 +41,6 @@ var questions = [{
     c: "3. House",
     d: "4. Hoop",
     correct: "2. Health",
-},
-{
-    q: "What does BMW stand for",
-    a: "Best Motor Works",
-    b: "Be My Way",
-    c: "Bavarian Motor Works",
-    d: "Bomb-down Motor Way",
-    correct: "Bavarian Motor Works",
-},
-{
-    q: "Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
-    a: "1. Rocky Balboa",
-    b: "2. George Foreman",
-    c: "3. Mike Tyson",
-    d: "4. Mandip Nijor",
-    correct: "2. George Foreman",
 },
 
 {
@@ -49,12 +53,21 @@ var questions = [{
 },
 
 {
-    q: "Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
-    a: "1. Rocky Balboa",
-    b: "2. George Foreman",
-    c: "3. Mike Tyson",
-    d: "4. Mandip Nijor",
-    correct: "2. George Foreman",
+    q: "What does BMW stand for",
+    a: "Best Motor Works",
+    b: "Be My Way",
+    c: "Bavarian Motor Works",
+    d: "Bomb-down Motor Way",
+    correct: "Bavarian Motor Works",
+},
+
+{
+    q: "Which type of language is JavaScript?",
+    a: "1. Object-Oriented",
+    b: "2. Object-Based",
+    c: "3. Assembly-language",
+    d: "4. High-level",
+    correct: "2. Object-Based",
 },
 
 {
@@ -67,21 +80,12 @@ var questions = [{
 },
 
 {
-    q: "Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
-    a: "1. Rocky Balboa",
-    b: "2. George Foreman",
-    c: "3. Mike Tyson",
-    d: "4. Mandip Nijor",
-    correct: "2. George Foreman",
-},
-
-{
-    q: "Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
-    a: "1. Rocky Balboa",
-    b: "2. George Foreman",
-    c: "3. Mike Tyson",
-    d: "4. Mandip Nijor",
-    correct: "2. George Foreman",
+    q: "How can we change the background color of an element?",
+    a: "1. background-color",
+    b: "2. color",
+    c: "3. both 1 and 2",
+    d: "4. none of the above",
+    correct: "1. background-color",
 }
 
 ];
@@ -153,7 +157,7 @@ var answerClick = function(event) {
     var answerDetermination = document.querySelector("#answer-determination");
     if (userAnswer !== correctAnswer) {
         adjustTime(-5);
-        answerDetermination.textContent = "Wrong!";
+        answerDetermination.textContent = "Wrong! - you just lost 5 seconds!";
         currentQuestionIndex++;
         if (currentQuestionIndex >= questions.length) {
             endQuizPage();
