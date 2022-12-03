@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
-    background-color: rgb(134, 165, 170);
+    background-image: url('../images/clouds.jpeg');
 }
 
 button {
