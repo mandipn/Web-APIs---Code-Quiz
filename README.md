@@ -1,88 +1,41 @@
-# Module 6 Challenge Web APIs: Code Quiz
+# Web APIs: Code Quiz by Mandip Nijor
 
-## Your Task
+## Repository
 
-As you proceed in your journey to becoming a front-end web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
+This application gives the user an opportunity to select 1 out of 4 possible options to try and answer 10 questions. There is a HTML file, CSS file, JavaScript file and an image which is used as a background.
 
-To help you become familiar with these tests and give you a chance to apply the skills from this module, this week’s challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework has taught you all the skills you need to succeed in this challenge.
+## Description
 
-
-## User Story
-
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
-
-## Acceptance Criteria
-
-Create a code quiz that contains the following requirements:
-
-* A start button that when clicked a timer starts and the first question appears.
- 
-  * Questions contain buttons for each answer.
-  * 
-  * When answer is clicked, the next question appears
-  * 
-  * If the answer clicked was incorrect then subtract time from the clock
-
-* The quiz should end when all questions are answered or the timer reaches 0.
-
-  * When the game ends, it should display their score and give the user the ability to save their initials and their score
-  
-## Mock-Up
-
-The following animation demonstrates the application functionality:
-
-![Animation of code quiz. Presses button to start quiz. Clicks the button for the answer to each question, displays if answer was correct or incorrect. Quiz finishes and displays high scores. User adds their intials, then clears their intials and starts over.](./assets/08-web-apis-challenge-demo.gif)
-
-## Grading Requirements
-
-This challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+This application gives the user an opportunity to select 1 out of 4 possible options to try and answer 10 questions as correctly as they can. In the end, the application shows the user their score and gives them the opportunity to add their initials to record their score.
 
 
-## Review
+## Instructions
 
-You are required to submit BOTH of the following for review:
+1. Make sure you read the instructions on the launch page
 
-* The URL of the functional, deployed application.
+2. When ready, click on the "Start Quiz" button
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+3. Note - as soon as the first question comes up, the 60 second timer starts
 
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+4. Work your way through the questions and answer as many as you can and as correctly as possible
+
+5. Note - every time you answer a question in-correctly, you will lose 5 seconds from the timer! 
+
+6. As soon as the timer finishes or you have answered all the questions, you will be presented with a screen to enter your intials
+
+7. You can then view your score by clicking on the "View Highest Score" button
+
+8. You can press "Play Again!" to start the quiz again
+
+# Screenshots of the application
+
+![image](https://user-images.githubusercontent.com/115933407/205456176-9903dc8c-e4ae-4bfd-a090-8c97e1f8e531.png)
+
+![image](https://user-images.githubusercontent.com/115933407/205456224-4cdcbb5d-5829-436b-8fd8-05f2f890a955.png)
+
+![image](https://user-images.githubusercontent.com/115933407/205456247-98aa8f14-1ec4-4ac3-9622-fb26be5a4be0.png)
+
+## Links
+
+- Repository: https://github.com/mandipn/Web-APIs-Code-Quiz
+- Deployed Application: 
