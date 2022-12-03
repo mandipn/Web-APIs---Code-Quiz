@@ -39,3 +39,7 @@ This application gives the user an opportunity to select 1 out of 4 possible opt
 
 - Repository: https://github.com/mandipn/Web-APIs-Code-Quiz
 - Deployed Application: https://mandipn.github.io/Web-APIs-Code-Quiz/
+
+## License
+
+Licensed under MIT License - https://github.com/mandipn/Web-APIs-Code-Quiz/blob/main/LICENSE
