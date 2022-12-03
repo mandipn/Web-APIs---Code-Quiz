@@ -1,5 +1,7 @@
+// adding 10 questions as array within the variable
+
 var questions = [{
-    q: "What is the smallest country in the world with an area of only 0.49 square kilometres?",
+    q: "1. What is the smallest country in the world with an area of only 0.49 square kilometres?",
     a: "1. Monaco",
     b: "2. Vatican",
     c: "3. Andorra",
@@ -8,7 +10,7 @@ var questions = [{
 },
 
 {
-    q: "The 'function' and 'var' are known as:?",
+    q: "2. The 'function' and 'var' are known as:?",
     a: "1. Keywords",
     b: "2. Data types",
     c: "3. Declaration statements",
@@ -17,7 +19,7 @@ var questions = [{
 },
 
 {
-    q: "Which of the following is a landlocked country, meaning it is not bordered by the sea or ocean?",
+    q: "3. Which of the following is a landlocked country, meaning it is not bordered by the sea or ocean?",
     a: "1. Kazakhstan",
     b: "2. Madagascar",
     c: "3. Turkey",
@@ -26,7 +28,7 @@ var questions = [{
 },
 
 {
-    q: "The correct sequence of HTML tags for starting a webpage is -",
+    q: "4. The correct sequence of HTML tags for starting a webpage is -",
     a: "1. Head, Title, HTML, body",
     b: "2. HTML, Body, Title, Head",
     c: "3. HTML, Title, Body, Head",
@@ -35,7 +37,7 @@ var questions = [{
 },
 
 {
-    q: "In the UK, the abbreviation NHS stands for National what Service",
+    q: "5. In the UK, the abbreviation NHS stands for National what Service",
     a: "1. Humanity",
     b: "2. Health",
     c: "3. House",
@@ -44,7 +46,7 @@ var questions = [{
 },
 
 {
-    q: "What does JSON stand for?",
+    q: "6. What does JSON stand for?",
     a: "1. Java Steps On Now",
     b: "2. Just Scripts On New",
     c: "3. Java Script Object Notation",
@@ -53,7 +55,7 @@ var questions = [{
 },
 
 {
-    q: "What does BMW stand for",
+    q: "7. What does BMW stand for",
     a: "Best Motor Works",
     b: "Be My Way",
     c: "Bavarian Motor Works",
@@ -62,7 +64,7 @@ var questions = [{
 },
 
 {
-    q: "Which type of language is JavaScript?",
+    q: "8. Which type of language is JavaScript?",
     a: "1. Object-Oriented",
     b: "2. Object-Based",
     c: "3. Assembly-language",
@@ -71,7 +73,7 @@ var questions = [{
 },
 
 {
-    q: "Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
+    q: "9. Which boxer did Muhammad Ali fight in ‘The Rumble in the Jungle’?",
     a: "1. Rocky Balboa",
     b: "2. George Foreman",
     c: "3. Mike Tyson",
@@ -80,7 +82,7 @@ var questions = [{
 },
 
 {
-    q: "How can we change the background color of an element?",
+    q: "10. How can we change the background color of an element?",
     a: "1. background-color",
     b: "2. color",
     c: "3. both 1 and 2",
@@ -90,11 +92,15 @@ var questions = [{
 
 ];
 
+// adding the 5 variables to get the timer to work
+
 var clickStart = document.getElementById("start");
 var timerEl = document.getElementById("countdown");
 var timeLeft = 60;
 var quizDuration;
 var questionContainer = document.querySelector("#quiz-container");
+
+//adding a function called timer with reference to the above variables in the code
 
 function timer() {
     timerEl.textContent = "Time remaining: " + timeLeft + "s";
@@ -106,6 +112,9 @@ function timer() {
         }
     }, 1000);
 }
+
+// adding a function called adjustTime to display and react according to time left
+
 function adjustTime(amount) {
     timeLeft += amount;
     if (timeLeft < 0) {
@@ -114,12 +123,18 @@ function adjustTime(amount) {
     timerEl.textContent = "Time remaining: " + timeLeft + "s";
 }
 
+//starting the timer when the start button is clicked
+
 clickStart.onclick = timer;
 var renderQuestion = function (question) {
     questionContainer.innerHTML = "";
 
+// displaying the question after the start button is clicked
+
     var questionHeader = document.createElement("h2");
     questionHeader.textContent = question.q;
+
+// displaying the 4 options per question and recording the result of the option user selects    
 
     var answerA = document.createElement("button");
     answerA.textContent = question.a;
@@ -137,12 +152,16 @@ var renderQuestion = function (question) {
     answerD.textContent = question.d;
     answerD.addEventListener("click", answerClick);
 
+ // inserting new nodes in DOM by using appendChild   
+
     questionContainer.appendChild(questionHeader);
     questionContainer.appendChild(answerA);
     questionContainer.appendChild(answerB);
     questionContainer.appendChild(answerC);
     questionContainer.appendChild(answerD);
 }
+
+// creating the default variables in order to show the user the outcome of their answer and moving to the new question
 
 var currentQuestionIndex = 0;
 var userScore = 0;
@@ -153,8 +172,10 @@ var answerClick = function(event) {
     event.preventDefault();
     var userAnswer = event.target.textContent;
     correctAnswer = questions[currentQuestionIndex].correct;
-    // determine if answer is wrong or right
-    var answerDetermination = document.querySelector("#answer-determination");
+
+// to determine if answer is wrong or correct and then displaying the outcome to the user
+
+   var answerDetermination = document.querySelector("#answer-determination");
     if (userAnswer !== correctAnswer) {
         adjustTime(-5);
         answerDetermination.textContent = "Wrong! - you just lost 5 seconds!";
@@ -174,6 +195,8 @@ var answerClick = function(event) {
     }
 };
 
+// resetting the display once the questions have finished and next steps
+
 var quiz = function (event) {
     event.preventDefault();
     resetDisplay();
@@ -184,6 +207,9 @@ function resetDisplay() {
     questionContainer.innerHTML="";
     document.querySelector("#intro-page").style.display = "none";
 }
+
+// capturing the highest score and name and displaying this back ot the user
+
 function highScores() {
     let data = localStorage.getItem("object");
     let getData = JSON.parse(data);
@@ -207,7 +233,7 @@ function endQuizPage() {
     let blank = document.querySelector("#answer-determination");
     blank.innerHTML = "";
 
-    endPage.innerHTML = "All done! Your final score is " + userScore + ". Enter your initials to save";
+    endPage.innerHTML = "You are all done! Your final score is " + userScore + ". Enter your initials to save";
 
     var initialBox = document.createElement("input");
     blank.appendChild(initialBox);
@@ -217,7 +243,7 @@ function endQuizPage() {
     blank.appendChild(submitInitialBtn);
 
     submitInitialBtn.addEventListener("click", () => {
-        // rest variable
+    
         
         if (initialBox.value.length === 0) return false;
 
